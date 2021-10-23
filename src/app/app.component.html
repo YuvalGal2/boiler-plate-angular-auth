@@ -1,0 +1,13 @@
+<div class="app-wrapper">
+  <div class="side-menu-wrapper" *ngIf="isAuthenticated">
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="main-section-wrapper">
+    <div class="header-wrapper"  *ngIf="isAuthenticated">
+      <app-outer-header></app-outer-header>
+    </div>
+    <div class="center-section-wrapper">
+     <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

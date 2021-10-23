@@ -1,0 +1,13 @@
+<div class="side-bar-wrapper">
+  <div class="side-bar-upper-area">
+    <div class="side-bar-node-container"  *ngFor="let sidebarUpperNode of sidebarUpperNodes">
+      <app-side-bar-node  [nodeSettings]="sidebarUpperNode"></app-side-bar-node>
+    </div>
+  </div>
+  <div class="side-bar-lower-area">
+    <div class="side-bar-node-container" *ngFor="let sidebarLowerNode of sidebarLowerNodes">
+          <app-side-bar-node [nodeSettings]="sidebarLowerNode"></app-side-bar-node>
+    </div>
+  </div>
+</div>
+
